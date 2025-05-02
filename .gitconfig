@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	name = LeothDev
+	email = leonardonicolapalma@protonmail.com
+[core]
+	editor = helix
+[commit]
+	template = ~/.gitmessage.txt
