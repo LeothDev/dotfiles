@@ -1,0 +1,54 @@
+[font]
+size = 15.0
+
+[font.normal]
+family = "FiraCode"
+style = "Regular"
+
+[window]
+opacity = 0.97
+decorations = "none"
+dynamic_padding = true
+
+[window.padding]
+x = 2
+y = 2
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style.shape = "Beam"
+style.blinking = "Always"
+blink_interval = 400
+
+[colors]
+transparent_background_colors = true
+
+[colors.primary]
+background = "#1f1d2e"
+foreground = "#e0def4"
+
+[colors.cursor]
+text = "#1f1d2e"
+cursor = "#e0def4"
+
+[colors.normal]
+black   = "#393552"
+red     = "#eb6f92"
+green   = "#31748f"
+yellow  = "#f6c177"
+blue    = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan    = "#ebbcba"
+white   = "#e0def4"
+
+[colors.bright]
+black   = "#6e6a86"
+red     = "#eb6f92"
+green   = "#31748f"
+yellow  = "#f6c177"
+blue    = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan    = "#ebbcba"
+white   = "#e0def4"

@@ -1,0 +1,106 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+# [package]
+# disabled = true
+
+palette = "rosepine"
+[palettes.rosepine]
+base = "#191724"
+surface = "#1f1d2e"
+overlay = "#26233a"
+muted = "#6e6a86"
+subtle = "#908caa"
+text = "#e0def4"
+love = "#eb6f92"
+gold = "#f6c177"
+rose = "#ebbcba"
+pine = "#31748f"
+foam = "#9ccfd8"
+iris = "#c4a7e7"
+highlight_low = "#21202e"
+highlight_med = "#403d52"
+highlight_high = "#524f67"
+
+my_red = "#524f67"
+spring_green = "#00FF7F"
+
+format = """
+$shell\
+$username\
+$hostname\
+$directory\
+$git_branch$git_status\
+$character
+"""
+# $python$golang\
+
+[os]
+disabled = true
+format = "$symbol"
+symbols.EndeavourOS = "🐧 "
+
+[shlvl]
+disabled = true
+threshold = 1
+symbol = "↕️"
+
+[shell]
+disabled = false
+bash_indicator = ""
+
+[username]
+show_always = true
+format = "[$user]($style) [@](dimmed cyan) "
+aliases = { "root" = "God"}
+
+[hostname]
+disabled = true
+ssh_only = false
+# style = "fg:$spring_green"
+style = "bold fg:spring_green"
+format = "[$ssh_symbol$hostname]($style) "
+
+[directory]
+disabled = false
+truncate_to_repo = true
+read_only = '🔐'
+format = "\\[ [$path]($style)[$read_only]($read_only_style) \\] "
+truncation_symbol = "…/"
+
+[git_branch]
+style = "fg:pine"
+# format = "on [$symbol$branch(:$remote_branch)]($style) "
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+
+[git_status]
+style = "fg:love"
+format = "[$all_status$ahead_behind]($style)"
+use_git_executable = true
+
+[character]
+# success_symbol = "[❯](bold spring_green)"
+success_symbol = "[›](bold spring_green)"
+# success_symbol = "[:3](bold spring_green)"
+error_symbol = "[✗](bold my_red)"
+vicmd_symbol = "[V](bold #9ccfd8)"
+
+[python]
+disabled = true
+# format = "via [Python $version](fg:rose)"
+
+[golang]
+disabled = true
+# format = "via [GO $version](fg:rose)"
+
+[nodejs]
+disabled = true
+
+[java]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[gradle]
+disabled = true

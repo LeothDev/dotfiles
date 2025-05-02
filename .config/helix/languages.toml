@@ -1,0 +1,16 @@
+[language-server.vls]
+command = "vls"
+
+[[language]]
+name = "go"
+language-servers = [ { name = "gopls"} ]
+
+[[language]]
+name = "vue"
+language-servers = [ { name = "prettier", only-features = [ "format" ]}, "vls" ]
+formatter = { command = "prettier" }
+
+[[language]]
+name = "html"
+language-servers = [ { name = "", only-features = [ "format" ]}, "vscode-html-languageservice"]
+formatter = { command = "prettier" } 
