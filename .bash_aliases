@@ -5,6 +5,8 @@ alias cls="clear"
 alias usage="du -sh * | sort -h"
 # alias meminfo="free -m -l -t"
 # alias ports="sudo lsof -i -P -n | grep LISTEN"
+alias yep="sudo pacman -S $1"
+alias nop="sudo pacman -R $1"
 
 # Handy
 alias h="history"
@@ -13,7 +15,7 @@ alias now="date +'%T'"
 alias path="echo -e ${PATH//:/\\n}"
 
 # Quick
-alias off="shutdown -h now"
+alias bye="shutdown -h now"
 
 # Navigation
 alias cd..="cd .."
@@ -29,7 +31,7 @@ alias l.="ls -d .*"
 # Utils
 alias please="sudo $(fc -ln -1)"
 # alias mkdircd="function _mkdircd() { mkdir '$1' && cd '$1'; }; _mkdircd"
-alias extract="function _extract() { tar -xvzf '$1'; }; _extract"
+alias untar="function _extract() { tar -xvzf '$1'; }; _extract"
 
 # Bluetooth
 alias blue-on="sudo systemctl start bluetooth"

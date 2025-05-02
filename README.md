@@ -1,6 +1,6 @@
 # 🛠️ My Dotfiles
 
-These are my personal configuration files for Linux (EndeavourOS + Hyprland).  
+These are my personal configuration files for Linux (EndeavourOS🚀 + Hyprland).  
 I use them to quickly set up my environment across machines.
 
 ## ✨ Features
