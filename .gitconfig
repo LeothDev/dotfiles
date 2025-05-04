@@ -7,3 +7,8 @@
 	editor = helix
 [commit]
 	template = ~/.gitmessage.txt
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	renames = true
+	mnemonicPrefix = true
