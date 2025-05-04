@@ -1,2 +1,3 @@
-./.config/helix/grammars
-./config/helix/runtime
+./.config/helix/grammars/
+./config/helix/runtime/
+./.config/helix/runtime/grammars/
