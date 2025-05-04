@@ -6,7 +6,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 
-PACKAGES=(fastfetch helix alacritty git starship exa wl-clipboard)
+PACKAGES=(fastfetch helix alacritty git starship exa wl-clipboard bat grim slurp libnotify)
 
 echo "==> Backing up existing dotfiles to $BACKUP_DIR"
 mkdir -p "$BACKUP_DIR"

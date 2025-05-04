@@ -24,6 +24,7 @@ alias ...="cd ../.."
 alias ~="cd ~"
 
 # Files
+alias cat="bat"
 alias ls="exa --icons -F -H --group-directories-first --git -1"
 alias ll="ls -alF"
 alias l.="ls -d .*"
@@ -49,4 +50,24 @@ alias uni="cd ~/Documents/University"
 alias dot="cd ~/dotfiles"
 
 # Grep
-alias grep="grep --color=auto"
+alias grep="rg --color=auto"
+
+# Git
+alias g="git"
+alias gs="git status -sb"
+alias ga="git add ."
+alias gc="git commit -v"
+alias gca="git commit --amend"
+alias gp="git push"
+alias gl="git pull"
+alias gb="git branch"
+alias gd="git diff"
+alias gnew="git checkout -b"
+alias gsave="git stash -u" # Save your changes before committing
+alias gpop="git stash pop" # Restore your stash changes
+alias glog="git log --oneline --graph --decorate --all"
+alias gundo="git reset --soft HEAD~1" # Undo last commit but keep changes
+alias gwip="ga && git commit -m [WIP] && gp"
+alias gdone="ga && git commit -m UPDATE && gp"
+alias gpurge="git clean -fd && git reset --hard" # Dangerous, deletes files and directories and resets all changes to last commit
+alias gwho="git config user.name && git config user.email"
