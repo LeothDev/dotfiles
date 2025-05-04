@@ -35,7 +35,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-> The script will:
+> **The script will**:
 1. Backup any conflicting dotfiles to ~/.dotfiles_backup_TIMESTAMP
 2. Create symlinks to everything in place
 3. Optionally install a few base packages
