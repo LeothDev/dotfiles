@@ -6,7 +6,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 
-PACKAGES=(fastfetch helix alacritty git starship exa wl-clipboard bat grim slurp libnotify)
+PACKAGES=(fastfetch helix alacritty git starship exa wl-clipboard bat grim slurp libnotify glow)
 
 echo "==> Backing up existing dotfiles to $BACKUP_DIR"
 mkdir -p "$BACKUP_DIR"
@@ -33,7 +33,7 @@ backup_and_link "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 echo "==> Linking config files..."
 mkdir -p "$CONFIG_DIR"
 
-CONFIGS=(alacritty fastfetch helix hypr ml4w ml4w-hyprland-settings rofi waybar)
+CONFIGS=(alacritty fastfetch helix hypr ml4w ml4w-hyprland-settings rofi waybar glow)
 for item in "${CONFIGS[@]}"; do
     backup_and_link "$DOTFILES_DIR/.config/$item" "$CONFIG_DIR/$item"
 done
