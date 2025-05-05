@@ -32,7 +32,8 @@ alias l.="ls -d .*"
 # Utils
 alias please="sudo $(fc -ln -1)"
 # alias mkdircd="function _mkdircd() { mkdir '$1' && cd '$1'; }; _mkdircd"
-alias untar="function _extract() { tar -xvzf '$1'; }; _extract"
+# alias untar="function _extract() { tar -xvzf '$1'; }; _extract"
+alias untar="tar -xvzf"
 
 # Bluetooth
 alias blue-on="sudo systemctl start bluetooth"
