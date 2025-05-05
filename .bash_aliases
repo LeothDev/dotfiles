@@ -47,7 +47,8 @@ alias fastping="ping -c 100 -s.2"
 
 # Productivity
 alias todo="helix ~/Documents/TODO.md"
-alias uni="cd ~/Documents/University"
+alias uni="cd ~/Code/Uni"
+alias edu="python ~/Code/Uni/eduroam-linux-Radius-22.py"
 alias dot="cd ~/dotfiles"
 
 # Grep
@@ -57,7 +58,7 @@ alias grep="rg --color=auto"
 alias g="git"
 alias gs="git status -sb"
 alias ga="git add ."
-alias gc="git commit -v"
+alias gc="git commit -m"
 alias gca="git commit --amend"
 alias gp="git push"
 alias gl="git pull"
