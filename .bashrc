@@ -31,3 +31,6 @@ alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
 eval "$(starship init bash)"
 
 export PATH="/opt/android-studio/bin/:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$HOME/go/bin:$PATH"
+export EDITOR="helix"

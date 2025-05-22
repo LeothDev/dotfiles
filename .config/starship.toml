@@ -32,6 +32,7 @@ $shell\
 $username\
 $hostname\
 $directory\
+$python\
 $git_branch$git_status\
 $character
 """
@@ -88,8 +89,10 @@ error_symbol = "[✗](bold my_red)"
 vicmd_symbol = "[V](bold #9ccfd8)"
 
 [python]
-disabled = true
-# format = "via [Python $version](fg:rose)"
+disabled = false
+symbol = '🐍'
+style = 'fg:bold foam'
+format = '[${symbol}(\($virtualenv\) )]($style)'
 
 [golang]
 disabled = true

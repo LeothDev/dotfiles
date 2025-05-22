@@ -28,7 +28,7 @@
         "network", 
         "cpu", 
         "memory", 
-        "keyboard-state", 
+        "disk",
         "battery", 
         "clock", 
         "tray",

@@ -12,3 +12,5 @@
 	colorMoved = plain
 	renames = true
 	mnemonicPrefix = true
+[push]
+	autoSetupRemote = true

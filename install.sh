@@ -4,7 +4,7 @@ set -e  # Exit on error
 
 DOTFILES_DIR="$HOME/dotfiles"
 CONFIG_DIR="$HOME/.config"
-BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
+BACKUP_DIR="$HOME/backups/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 
 PACKAGES=(fastfetch helix alacritty git starship exa wl-clipboard bat grim slurp libnotify glow)
 

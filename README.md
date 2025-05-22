@@ -10,7 +10,7 @@ I use them to quickly set up my environment across machines.
 
 - 🧩 Hyprland setup with waybar, rofi, etc.
 
-- ⚡ Terminal-first workflow (Helix, Alacritty, Fastfetch, Starship)
+- ⚡ Terminal-first workflow (Helix, Alacritty, Fastfetch, Starship, bat, exa)
 
 - 🧠 Smart Bash aliases
 

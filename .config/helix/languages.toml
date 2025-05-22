@@ -22,4 +22,4 @@ args = [ "server" ]
 [[language]]
 name = "python"
 language-servers = ["ruff", "pylsp"]
-auto-format = true
+auto-format = false

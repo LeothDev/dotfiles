@@ -5,8 +5,8 @@ alias cls="clear"
 alias usage="du -sh * | sort -h"
 # alias meminfo="free -m -l -t"
 # alias ports="sudo lsof -i -P -n | grep LISTEN"
-alias yep="sudo pacman -S $1"
-alias nop="sudo pacman -R $1"
+alias yup="sudo pacman -S"
+alias nop="sudo pacman -R"
 
 # Handy
 alias h="history"
@@ -18,6 +18,7 @@ alias path="echo -e ${PATH//:/\\n}"
 alias bye="shutdown -h now"
 
 # Navigation
+alias cmkdir="mkdir $1 && cd $1"
 alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."
@@ -46,9 +47,12 @@ alias ping="ping -c 4"
 alias fastping="ping -c 100 -s.2"
 
 # Productivity
-alias todo="helix ~/Documents/TODO.md"
-alias uni="cd ~/Code/Uni"
-alias edu="python ~/Code/Uni/eduroam-linux-Radius-22.py"
+alias gtodo="helix ~/Documents/TODO.md"
+alias stodo="glow ~/Documents/TODO.md"
+alias code="cd ~/Code"
+alias dev="cd ~/Code/dev"
+alias uni="cd ~/Code/uni"
+alias edu="python ~/Code/uni/eduroam-linux-Radius-22.py"
 alias dot="cd ~/dotfiles"
 
 # Grep
@@ -73,3 +77,9 @@ alias gwip="ga && git commit -m [WIP] && gp"
 alias gdone="ga && git commit -m UPDATE && gp"
 alias gpurge="git clean -fd && git reset --hard" # Dangerous, deletes files and directories and resets all changes to last commit
 alias gwho="git config user.name && git config user.email"
+
+
+# Python
+alias venv="python -m venv .venv"
+alias onvenv="source ./.venv/bin/activate"
+

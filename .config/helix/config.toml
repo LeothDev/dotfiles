@@ -17,16 +17,16 @@ display-inlay-hints = true
 
 [editor.statusline]
 left = [ "mode", "spinner", "file-name", "file-modification-indicator" ] 
-center = ["position", "total-line-numbers", "register"]
-right = [ "workspace-diagnostics", "diagnostics", "file-encoding", "file-type", "version-control" ]
+center = [ "position", "total-line-numbers", "register"]
+right = [ "diagnostics", "file-encoding", "file-type", "version-control" ]
 separator = "|"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [editor.inline-diagnostics]
-cursor-line = "warning"
-other-lines = "error"
+# cursor-line = "error"
+# other-lines = "error"
 
 [editor.indent-guides]
 render = true
@@ -51,8 +51,8 @@ hidden = false
 
 [editor.auto-save]
 focus-lost = true
-after-delay.enable = true
-after-delay.timeout = 1000
+# after-delay.enable = true
+# after-delay.timeout = 1000
 
 [editor.soft-wrap]
 enable = true
@@ -78,6 +78,7 @@ space.v = ":vsplit" # Vertical Split
 C-l = [ "jump_view_right" ]
 C-h = [ "jump_view_left" ]
 C-q = [ "wclose" ]
+C-w = [ ":write" ]
 
 # Buffers
 

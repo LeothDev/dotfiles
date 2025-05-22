@@ -1,1 +1,1 @@
-brave --disable-gpu
+brave --ozone-platform=wayland --force-device-scale-factor=2
