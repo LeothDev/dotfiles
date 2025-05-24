@@ -95,8 +95,8 @@ style = 'fg:bold foam'
 format = '[${symbol}(\($virtualenv\) )]($style)'
 
 [golang]
-disabled = true
-# format = "via [GO $version](fg:rose)"
+disabled = false
+format = "[GO $version ](fg:foam)"
 
 [nodejs]
 disabled = true

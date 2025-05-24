@@ -16,6 +16,11 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
+# LOAD CUSTOM .bash_functions if exists
+if [ -f ~/.bash_functions ]; then
+    source ~/.bash_functions
+fi
+
 # -----------------------------------------------------
 # Fastfetch if in Hyprland
 # -----------------------------------------------------
@@ -34,3 +39,4 @@ export PATH="/opt/android-studio/bin/:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$HOME/go/bin:$PATH"
 export EDITOR="helix"
+
