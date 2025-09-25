@@ -12,8 +12,16 @@ formatter = { command = "prettier" }
 
 [[language]]
 name = "html"
-language-servers = [ { name = "", only-features = [ "format" ]}, "vscode-html-languageservice"]
-formatter = { command = "prettier" } 
+# language-servers = [ { name = "", only-features = [ "format" ]}, "vscode-html-languageservice"]
+# formatter = { command = "prettier" } 
+scope = "source.html"
+roots = []
+file-types = ["html"]
+language-servers = [ "superhtml-lsp" ]
+
+[language-server.superhtml-lsp]
+command = "superhtml"
+args = ["lsp"]
 
 [language-server.ruff]
 command = "ruff"

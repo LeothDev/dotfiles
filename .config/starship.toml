@@ -27,6 +27,8 @@ highlight_high = "#524f67"
 my_red = "#524f67"
 spring_green = "#00FF7F"
 
+
+# 
 format = """
 $shell\
 $username\
@@ -100,8 +102,8 @@ format = "[GO $version ](fg:foam)"
 
 [nodejs]
 disabled = true
-
 [java]
+
 disabled = true
 
 [kotlin]

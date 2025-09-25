@@ -34,9 +34,16 @@ fi
 
 alias ml4w-hyprland='~/.config/ml4w/apps/ML4W_Hyprland_Settings-x86_64.AppImage'
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"
 
 export PATH="/opt/android-studio/bin/:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$PATH:$HOME/Code/scripts/lsp"
+export PATH="$PATH:$HOME/platform-tools"
 export EDITOR="helix"
 
+# Binds
+# bind -x '"\C-s":"source ~/.bashrc"'
+bind -x '"\C-g":"~/Code/dev/werewolf.sh/assets/scripts/simulate_ssh_intro.sh"'
+bind -x '"\ew":"ww"'

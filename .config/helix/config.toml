@@ -7,7 +7,7 @@ line-number = "relative"
 end-of-line-diagnostics = "hint"
 bufferline = "multiple"
 cursorline = true
-shell = [ "cmd", "/C" ]
+# shell = [ "cmd", "/C" ]
 color-modes = true
 rulers = [ 80 ]
 jump-label-alphabet = "jfkdls;aurieowpqnvmcxz"
@@ -47,7 +47,7 @@ hidden = false
 "'" = "'"
 '"' = '"'
 '`' = '`'
-'<' = '>'
+# '<' = '>'
 
 
 [editor.auto-save]
@@ -95,11 +95,11 @@ u = "switch_to_uppercase"
 # TOOLS
 [keys.normal.T]
 g = [ ":new", ":insert-output lazygit", ":buffer-close!", ":redraw" ]# Git Integration through Lazygit
-y = [ ':sh del E:\Packages\yazi\yazi-path.txt',
-':insert-output yazi --chooser-file=E:\Packages\yazi\yazi-path.txt',
-':open %sh{type E:\Packages\yazi\yazi-path.txt}',
-":redraw"
-] # File Explorer through Yazi - WIP
+# y = [ ':sh del E:\Packages\yazi\yazi-path.txt',
+# ':insert-output yazi --chooser-file=E:\Packages\yazi\yazi-path.txt',
+# ':open %sh{type E:\Packages\yazi\yazi-path.txt}',
+# ":redraw"
+# ] # File Explorer through Yazi - WIP
 
 # Terminal State Management
 [keys.normal.backspace]

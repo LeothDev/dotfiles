@@ -42,6 +42,7 @@ alias blue-off="sudo systemctl stop bluetooth"
 
 
 # Dev Tools
+alias gngrok="ngrok http --domain=oddly-resolved-kite.ngrok-free.app 3000"
 alias silconf="hx ~/.config/silicon/config"
 alias hx="helix"
 alias ping="ping -c 4"
@@ -58,7 +59,7 @@ alias edu="python ~/Code/uni/eduroam-linux-Radius-22.py"
 alias dot="cd ~/dotfiles"
 
 # Grep
-alias grep="rg --color=auto"
+# alias grep="rg --color=auto"
 
 # Git
 alias g="git"
@@ -87,7 +88,13 @@ alias onvenv="source ./.venv/bin/activate"
 
 
 # YT
+alias ww="open ~/Code/dev/werewolf.sh/personal/ww-journal.html"
 alias mkv2mp4='ffmpeg -i "$1" -c copy "${1%.mkv}.mp4"'
 alias rec="asciinema rec"
 alias play="asciinema play"
 alias recs='cd ~/Videos/YT/recordings'
+
+# Bluetooth
+alias blueon='sudo systemctl start bluetooth.service'
+alias blue='bluetoothctl'
+alias blueoff='sudo systemctl stop bluetooth.service'
